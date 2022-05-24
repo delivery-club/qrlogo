@@ -8,8 +8,8 @@
 
 QRLogo is a small library and command line to generate QR images with small logo placed in the center.
 
-Thanks to redundancy in the QE codes nature, code remains readable even if part of its covered by image, i.e. logo. It
-allows to create nice branded-like QR codes.
+Thanks to redundancy in the QR codes nature, code remains readable even if part of its covered by image, i.e. logo. It
+allows creating nice branded-like QR codes.
 
 ![Demo](assets/qr.png)
 
