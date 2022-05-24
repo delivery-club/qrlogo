@@ -10,7 +10,7 @@ import (
 	qr "github.com/skip2/go-qrcode"
 )
 
-// Encode encodes QR image, adds logo overlay and renders result as PNG.
+// Encode encodes QR image, adds logo overlay and renders result.
 func Encode(content string, logo image.Image, size int, outputFormat string) (*bytes.Buffer, error) {
 	var buf bytes.Buffer
 
