@@ -10,7 +10,7 @@ import (
 )
 
 func TestEncodePNG(t *testing.T) {
-	qr, err := os.Open("assets/qr.png")
+	qr, err := os.Open("./assets/qr.png")
 	if err != nil {
 		t.Fatalf("on open file:%s", err)
 	}
@@ -22,7 +22,7 @@ func TestEncodePNG(t *testing.T) {
 	}
 	oldSum := fmt.Sprintf("%x", md5.Sum(b))
 
-	logo, err := os.Open("assets/logo.jpeg")
+	logo, err := os.Open("./assets/logo.jpeg")
 	if err != nil {
 		t.Fatalf("on open file:%s", err)
 	}

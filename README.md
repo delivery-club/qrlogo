@@ -1,6 +1,6 @@
 # Qrlogo
 
-[![codecov](https://codecov.io/gh/delivery-club/qrlogo/branch/master/graph/badge.svg)](https://codecov.io/gh/delivery-club/qrlogo)
+[![Tests](https://github.com/delivery-club/qrlogo/workflows/Tests/badge.svg)](https://github.com/delivery-club/qrlogo/blob/master/.github/workflows/ci.yml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/delivery-club/qrlogo)](https://goreportcard.com/report/github.com/delivery-club/qrlogo)
 [![Go Reference](https://pkg.go.dev/badge/github.com/delivery-club/qrlogo.svg)](https://pkg.go.dev/github.com/delivery-club/qrlogo)
 
@@ -41,7 +41,7 @@ proportions.
 ### Library
 
 For the library, usually it's enough to call only `qrlogo.Encode()` function.
-See [Documentation](https://godoc.org/github.com/delivery-club/qrlog) for more details.
+See [Documentation](https://godoc.org/github.com/delivery-club/qrlogo) for more details.
 
 ## License
 
