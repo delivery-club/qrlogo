@@ -1,4 +1,4 @@
-module qrlogo
+module github.com/delivery-club/qrlogo
 
 go 1.17
 

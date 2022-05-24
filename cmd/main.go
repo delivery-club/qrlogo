@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"qrlogo"
+	"github.com/delivery-club/qrlogo"
 )
 
 var (
