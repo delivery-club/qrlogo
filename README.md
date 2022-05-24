@@ -41,9 +41,15 @@ proportions.
 ### Library
 
 For the library, usually it's enough to call only `qrlogo.Encode()` function.
-See [Documentation](https://godoc.org/github.com/delivery-club/qrlogo) for more details.
+See [Documentation](https://godoc.org/github.com/delivery-club/qrlogo) for more details
+or [test examples](https://github.com/delivery-club/qrlogo/blob/master/qr_test.go).
+
+Supported picture formats (in/out):
+
+- png
+- jpeg
+- jpg
 
 ## License
 
 MIT
-
