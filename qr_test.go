@@ -10,7 +10,15 @@ import (
 )
 
 func TestEncodePNG(t *testing.T) {
-	qr, err := os.Open("./assets/qr.png")
+	testEncode(t, "png")
+}
+
+func TestEncodeJPEG(t *testing.T) {
+	testEncode(t, "jpeg")
+}
+
+func testEncode(t *testing.T, outputFormat string) {
+	qr, err := os.Open("./assets/qr." + outputFormat)
 	if err != nil {
 		t.Fatalf("on open file:%s", err)
 	}
@@ -32,7 +40,7 @@ func TestEncodePNG(t *testing.T) {
 		t.Fatalf("on decode jpeg:%s", err)
 	}
 
-	buf, err := Encode("https://delivery-club.ru", img, 512, "png")
+	buf, err := Encode("https://delivery-club.ru", img, 512, outputFormat)
 	if err != nil {
 		t.Fatalf("on encode: qr-code:%s", err)
 	}
