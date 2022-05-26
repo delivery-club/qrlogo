@@ -63,12 +63,16 @@ func main() {
 		log.Println("on create output image:", err)
 		return
 	}
+	defer func() {
+		if err := out.Close(); err != nil {
+			log.Println("on close result file:", err)
+		}
+	}()
 
 	if _, err = io.Copy(out, qr); err != nil {
 		log.Println("on copy data to destination:", err)
 		return
 	}
-	_ = out.Close()
 
 	fmt.Println("Result:", *output)
 }
